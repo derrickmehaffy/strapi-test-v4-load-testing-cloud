@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "simple_tests",
+  "info": {
+    "singularName": "simple-test",
+    "pluralName": "simple-tests",
+    "displayName": "simple-test",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "string": {
+      "type": "string"
+    },
+    "richtext": {
+      "type": "richtext"
+    },
+    "json": {
+      "type": "json"
+    },
+    "boolean": {
+      "type": "boolean"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "string"
+    },
+    "dz": {
+      "type": "dynamiczone",
+      "components": [
+        "test.dz"
+      ]
+    },
+    "compo": {
+      "displayName": "compo",
+      "type": "component",
+      "repeatable": false,
+      "component": "test.compo"
+    }
+  }
+}

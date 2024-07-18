@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_test_dzs",
+  "info": {
+    "displayName": "dz",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "string": {
+      "type": "string"
+    }
+  }
+}

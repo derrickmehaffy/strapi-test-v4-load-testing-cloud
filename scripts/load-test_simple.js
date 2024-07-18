@@ -8,11 +8,15 @@ export const options = {
   duration: "30s",
 };
 
+const domain = "http://localhost:1337";
+const contentType = "simple-tests";
+const params = "populate=*";
+const token = "set your jwt here";
+
 export default function () {
-  http.get("http://127.0.0.1:1337/api/simple-tests?populate=*", {
+  http.get(`${domain}/api/${contentType}?${params}`, {
     headers: {
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIxMzI1OTAxLCJleHAiOjE3MjM5MTc5MDF9.WFfM50kE9K3OyKV7CBOjA8-IHEgsjq3JxfAhjkgYl0A",
+      Authorization: `Bearer ${token}`,
     },
   });
   sleep(1);
